@@ -5,7 +5,7 @@
   "author": "Luis Rodriguez",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
+    "serve": "live-server docs/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server"
