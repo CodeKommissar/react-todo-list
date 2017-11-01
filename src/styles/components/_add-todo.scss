@@ -1,0 +1,37 @@
+.add-todo__input {
+    color: $blue;
+    cursor: pointer;
+    background: $gray;
+    border: 3px solid rgba(0,0,0,0);
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    padding: 1.3rem 1.3rem 1.3rem 2.0rem;
+    width: 100%;
+}
+
+.add-todo__input:focus {
+    background: white;
+    border: 3px solid $blue;
+    outline: none;
+}
+
+
+// CSS Transitions classes
+.add-todo-transition-enter {
+  opacity: 0.01;
+}
+
+.add-todo-transition-enter.add-todo-transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+// Transition for when the todo is deleted
+.add-todo-transition-leave {
+  opacity: 1;
+}
+
+.add-todo-transition-leave.add-todo-transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}

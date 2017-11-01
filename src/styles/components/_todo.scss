@@ -1,0 +1,56 @@
+// Todo basic styles
+
+.todo {
+  background: white;
+  color: #666;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.todo:nth-child(2n) {
+  background: $gray;
+}
+
+.todo--completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+span {
+  background: #e74c3c;
+  color: white;
+  display: inline-block;
+  height: 4rem;
+  margin-right: 2rem;
+  opacity: 0;  
+  transition: 0.2s linear;
+  text-align: center;
+  width: 0;
+}
+
+.todo:hover span {
+  opacity: 1.0;
+  width: 4rem;
+}
+
+// CSS Transitions classes
+
+// Transition for when the todo is created
+/* .todo-enter {
+  opacity: 0.01;
+}
+
+.todo-enter.todo-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}*/
+
+// Transition for when the todo is deleted
+.todo-leave {
+  opacity: 1;
+}
+
+.todo-leave.todo-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
